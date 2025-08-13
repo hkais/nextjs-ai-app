@@ -32,10 +32,10 @@ export default function StructuredDataPage() {
                 {object.recipe.ingredients.map((ingredient, index) => (
                   <div
                     key={index}
-                    className="bg-zinc-50 dark:bg-zinc-800 p-4 rounded-lg"
+                    className="bg-zinc-800 p-4 rounded-lg"
                   >
                     <p className="font-medium">{ingredient?.name}</p>
-                    <p className="text-zinc-600 dark:text-zinc-400">
+                    <p className="text-zinc-400">
                       {ingredient?.amount}
                     </p>
                   </div>
@@ -51,7 +51,7 @@ export default function StructuredDataPage() {
                 {object.recipe.steps.map((step, index) => (
                   <li
                     key={index}
-                    className="bg-zinc-50 dark:bg-zinc-800 p-4 rounded-lg"
+                    className="bg-zinc-800 p-4 rounded-lg"
                   >
                     <span className="font-medium mr-2">{index + 1}.</span>
                     {step}
@@ -64,7 +64,7 @@ export default function StructuredDataPage() {
       )}
       <form
         onSubmit={handleSubmit}
-        className="fixed bottom-0 w-full max-w-2xl mx-auto left-0 right-0 p-4 bg-zinc-50 dark:bg-zinc-950 border-t border-zinc-200 dark:border-zinc-800 shadow-lg"
+        className="fixed bottom-0 w-full max-w-2xl mx-auto left-0 right-0 p-4 bg-zinc-950 border-t border-zinc-800 shadow-lg"
       >
         <div className="flex gap-2">
           <input
@@ -72,7 +72,7 @@ export default function StructuredDataPage() {
             value={dishName}
             onChange={(e) => setDishName(e.target.value)}
             placeholder="Enter a dish name..."
-            className="flex-1 dark:bg-zinc-800 p-2 border border-zinc-300 dark:border-zinc-700 rounded shadow-xl"
+            className="flex-1 bg-zinc-800 p-2 border border-zinc-700 rounded shadow-xl text-zinc-100 placeholder-zinc-400"
           />
           {isLoading ? (
             <button

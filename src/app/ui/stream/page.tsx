@@ -26,13 +26,13 @@ export default function StreamPage() {
           setInput("");
           handleSubmit(e);
         }}
-        className="fixed bottom-0 w-full max-w-md mx-auto left-0 right-0 p-4 bg-zinc-50 dark:bg-zinc-950 border-t border-zinc-200 dark:border-zinc-800 shadow-lg"
+        className="fixed bottom-0 w-full max-w-md mx-auto left-0 right-0 p-4 bg-zinc-950 border-t border-zinc-800 shadow-lg"
       >
         <div className="flex gap-2">
           <input
             type="text"
             placeholder="Ask any question you think about!"
-            className="flex-1 dark:bg-zinc-800 p-2 border border-zinc-300 dark:border-zinc-700 rounded shadow-xl"
+            className="flex-1 bg-zinc-800 p-2 border border-zinc-700 rounded shadow-xl text-zinc-100 placeholder-zinc-400"
             value={input}
             onChange={handleInputChange}
           />
